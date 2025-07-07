@@ -57,9 +57,9 @@ const Footer = () => {
               perspiciatis ullam rem qui amet optio, ea id, distinctio omnis voluptate atque ipsam?
             </p>
             <div className='socialLink flex gap-3'>
-              <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
+              <a href="https://www.facebook.com/OkikiolaFakorede01" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
               <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaLinkedin /></a>
-              <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
+              <a href="https://x.com/conquer_create" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
               <a href="https://github.com/Holuwaconquer" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaGithubSquare /></a>
             </div>
           </div>
