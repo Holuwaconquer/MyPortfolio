@@ -6,49 +6,11 @@ import Quote from '../assets/quote-up.png'
 import Star from '../assets/star.png'
 import Vector2 from '../assets/Vector2.png'
 import Arrow from '../assets/upright.png'
-import HeroBg from '../assets/Hero.png'
 import Typewritter from './Typewritter'
 
 const Hero = () => {
 
   const [hoveredBtn, setHoveredBtn] = useState(null);
-  useEffect(() => {
-    const lerp = (a, b, t) => a + (b - a) * t
-    let targetX = window.innerWidth / 2
-    let targetY = window.innerHeight / 2
-    let currentX = targetX
-    let currentY = targetY
-
-    const handleMouseMove = (e) => {
-      targetX = e.clientX
-      targetY = e.clientY
-    }
-
-    document.addEventListener('mousemove', handleMouseMove)
-
-    const updateGradientAngle = (x, y) => {
-      const angle = Math.atan2(y - window.innerHeight / 2, x - window.innerWidth / 2) * (180 / Math.PI)
-      document.querySelector(".heroSection").style.background = `
-      linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) 150px),
-      linear-gradient(${angle}deg, rgba(255,255,255,0.034), transparent 70%),
-      linear-gradient(${angle}deg, transparent, rgba(255,255,255,1) 40%),
-      url(${HeroBg}) no-repeat center center`;
-    }
-
-    const animate = () => {
-      currentX = lerp(currentX, targetX, 0.1)
-      currentY = lerp(currentY, targetY, 0.1)
-      updateGradientAngle(currentX, currentY)
-      requestAnimationFrame(animate)
-    }
-
-    animate()
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
-
 
   return (
     <div className='flex flex-col heroSection justify-center items-center bg-white text-black'>
@@ -78,7 +40,7 @@ const Hero = () => {
             <div className='w-full row-start-3 md:row-start-auto relative profilePic'>
               <img className='w-full' src={Circle} alt='svg' />
               <img className='absolute w-full bottom-0' src={Human} alt='svg' />
-              <div className='absolute left-[20%] md:left-[40%] bottom-2 border-1 rounded-[60px] bg-[#ffffff33] backdrop-blur-[5px] border-[#ffffff] cta'>
+              <div className='absolute left-[20%] md:left-[35%] bottom-2 border-1 rounded-[60px] bg-[#ffffff33] backdrop-blur-[5px] border-[#ffffff] cta'>
                 <div className='flex gap-2 actionBtn'>
                   <button
                     onMouseEnter={() => setHoveredBtn('portfolio')}

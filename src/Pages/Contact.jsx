@@ -1,17 +1,29 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 60 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.2, ease: 'easeOut' }
+  }
+}
 const Contact = () => {
   return (
+    <motion.div
+      variants={fadeUpVariant}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.5 }}
+    >
     <div style={{padding: '5% 7%'}} className='About flex flex-col gap-4 items-center'>
       <h1 className='text-4xl font-bold text-center'>Contact <span className='text-[#FD853A]'>Me</span></h1>
       <div style={{marginTop: '40px'}} className='grid md:grid-cols-[1fr_1fr] items-start justify-center md:flex-row md:gap-[5em] gap-4'>
         <div className='w-full flex text-center md:text-left flex-col gap-[3em]'>
           <h1 className='text-3xl text-[#FD853A] font-bold'>Let's work together</h1>
           <p className='leading-[30px]'>
-            Hi, I'm Peter Fakorede! I'm a passionate Fullstack developer and tech enthusiast who 
-            loves building web apps that solve real problems. and I have a strong background in Computing 
-            and Information Technology, i have gained Experience in Computer science at Abraham Adesanya Polytechnic, 
-            and also studied software engineering at SQI College of ICT.
+            Feel free to reach out — whether you have a project, <br /> a question, or just want to connect. I’m open to freelance <br />
+             opportunities, team collaborations, or sharing insights and ideas.
           </p>
           <div className='socialLink'>
             <a href="">F</a>
@@ -30,6 +42,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   )
 }
 

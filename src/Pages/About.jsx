@@ -1,9 +1,25 @@
 import React from 'react'
 import Button from '../componenets/Button'
 import Human from '../assets/hireMe.png'
+import { motion } from 'framer-motion'
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 60 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.2, ease: 'easeOut' }
+  }
+}
 
 const About = () => {
   return (
+    <motion.div
+      variants={fadeUpVariant}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.5 }}
+    >
     <div style={{padding: '5% 10%'}} className='About flex flex-col gap-4 items-center'>
       <h1 className='text-4xl font-bold text-center'>About <span className='text-[#FD853A]'>Me</span></h1>
 
@@ -12,12 +28,11 @@ const About = () => {
           <h1 className='text-3xl text-[#FD853A] font-bold'>Know who i am</h1>
           <h2 className='text-2xl'>My journey in few words</h2>
           <p>
-            Hi, I'm Peter Fakorede! I'm a passionate Fullstack developer and tech enthusiast who 
-            loves building web apps that solve real problems. and I have a strong background in Computing 
-            and Information Technology, i have gained Experience in Computer science at Abraham Adesanya Polytechnic, 
-            and also studied software engineering at SQI College of ICT.
-            I have a strong foundation in HTML, CSS, and JavaScript, and I'm proficient in React.js, 
-            Node.js, and Express.js. I also have experience with MongoDB for database management.
+            Hi, I'm Peter Fakorede — a dedicated Full-Stack Developer and tech enthusiast with a strong 
+            passion for building web applications that solve real-world problems. I hold a solid academic 
+            background in Computing and Information Technology, having studied Computer Science at Abraham 
+            Adesanya Polytechnic and furthered my expertise in Software Engineering at SQI College of ICT. 
+            My goal is to create efficient, user-focused digital solutions that make a meaningful impact.
           </p>
           <Button style={{padding: '10px 20px', borderRadius: '10px'}} BtnText='Hire me' />
         </div>
@@ -26,6 +41,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   )
 }
 

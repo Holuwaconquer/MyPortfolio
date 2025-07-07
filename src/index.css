@@ -51,7 +51,6 @@ body{
  .heroSection {
   margin: 0 0;
   padding: 20px 5% 0;
-  cursor: pointer !important;
   background-size: cover;
   transition: background 0.1s ease;
   position: relative;
