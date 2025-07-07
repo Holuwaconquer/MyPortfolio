@@ -1,5 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaLinkedin, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
+
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 60 },
   visible: {
@@ -25,11 +29,11 @@ const Contact = () => {
             Feel free to reach out — whether you have a project, <br /> a question, or just want to connect. I’m open to freelance <br />
              opportunities, team collaborations, or sharing insights and ideas.
           </p>
-          <div className='socialLink'>
-            <a href="">F</a>
-            <a href="">L</a>
-            <a href="">I</a>
-            <a href="">G</a>
+          <div className='socialLink flex gap-3'>
+            <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
+            <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaLinkedin /></a>
+            <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
+            <a href="https://github.com/Holuwaconquer" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaGithubSquare /></a>
           </div>
         </div>
         <div className='w-full'>

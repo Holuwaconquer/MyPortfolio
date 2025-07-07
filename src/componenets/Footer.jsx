@@ -4,6 +4,8 @@ import Logo from '../assets/newLogo.png'
 import Filled from '../assets/filled.png'
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { FaLinkedin, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 60 },
@@ -54,6 +56,12 @@ const Footer = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias! Asperiores hic
               perspiciatis ullam rem qui amet optio, ea id, distinctio omnis voluptate atque ipsam?
             </p>
+            <div className='socialLink flex gap-3'>
+              <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
+              <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaLinkedin /></a>
+              <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
+              <a href="https://github.com/Holuwaconquer" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaGithubSquare /></a>
+            </div>
           </div>
 
           <div className='navigate'>
