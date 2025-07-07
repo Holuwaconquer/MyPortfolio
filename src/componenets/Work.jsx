@@ -1,0 +1,83 @@
+import React, { useEffect } from 'react'
+import Center from '../assets/centerPatter.png'
+import { motion } from 'framer-motion'
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1 },
+  }
+}
+const Work = () => {
+
+  return (
+    <motion.div
+          variants={fadeUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          <div className='w-full workExperience'>
+            <div className='w-full'>
+              <h1 className='text-4xl font-bold text-center'>My <span className='text-[#FD853A]'>Work Experience</span></h1>
+              <div style={{margin: '3em 0'}} className='workEx flex flex-col gap-5 w-full relative'>
+                {/* first */}
+                <div className='w-full grid md:grid-cols-[1fr_1fr]'>
+                  <div className='w-full'>
+                    <h1 className='text-2xl font-bold text-[#344054]'>SQI College of ICT, Abeokuta</h1>
+                    <p className='text-[#98A2B3]'>May 2025 - till Date</p>
+                  </div>
+                  <div style={{justifySelf: 'flex-end'}} className='md:w-3/4'>
+                    <h1 className='text-[1.2rem] md:text-2xl font-bold text-[#344054]'>Software Developement Internship</h1>
+                    <p className='text-[#98A2B3] text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, 
+                      deleniti illum? Nulla itaque facere amet. Enim similique culpa nihil
+                      distinctio eos voluptatem omnis consequuntur modi?
+                    </p>
+                  </div>
+                </div>
+
+                {/* second */}
+                <div className='w-full grid md:grid-cols-[1fr_1fr] justify-between'>
+                  <div>
+                    <h1 className='text-2xl font-bold text-[#344054]'>S4E Agency, Abeokuta</h1>
+                    <p className='text-[#98A2B3]'>May 2025 - till Date</p>
+                  </div>
+                  <div style={{justifySelf: 'flex-end'}} className='md:w-3/4'>
+                    <h1 className='text-[1.2rem] md:text-2xl font-bold text-[#344054]'>Web Designer</h1>
+                    <p className='text-[#98A2B3] text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto 
+                      culpa ad quibusdam labore exercitationem minima dignissimos cumque 
+                      repudiandae? Corrupti officiis possimus culpa rem nobis?
+                    </p>
+                  </div>
+                </div>
+                {/* second */}
+
+                {/* third */}
+                <div className='w-full grid md:grid-cols-[1fr_1fr] justify-between'>
+                  <div>
+                    <h1 className='text-2xl font-bold text-[#344054]'>Emmanuel TechHub, Ota, Ogun State</h1>
+                    <p className='text-[#98A2B3]'>Jan 2023 - December, 2024</p>
+                  </div>
+                  <div style={{justifySelf: 'flex-end'}} className='md:w-3/4'>
+                    <h1 className='text-[1.2rem] md:text-2xl font-bold text-[#344054]'>Data Analysis with Excel</h1>
+                    <p className='text-[#98A2B3] text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id 
+                      natus distinctio corrupti quam dolorem dolorum pariatur quasi, 
+                      blanditiis enim officia aliquid, similique neque ipsa?
+                    </p>
+                  </div>
+                </div>
+                {/* third */}
+
+                <div className='absolute left-[-20%] md:left-[45%] centerImg'>
+                  <img src={Center} className='relative h-[500px] md:h-[auto] md:w-[35px]' alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+  )
+}
+
+export default Work
