@@ -40,7 +40,7 @@ const Hero = () => {
             <div className='w-full row-start-3 md:row-start-auto relative profilePic'>
               <img className='w-full' src={Circle} alt='svg' />
               <img className='absolute w-full bottom-0' src={Human} alt='svg' />
-              <div className='absolute left-[20%] md:left-[35%] bottom-2 border-1 rounded-[60px] bg-[#ffffff33] backdrop-blur-[5px] border-[#ffffff] cta'>
+              <div className='absolute left-[15%] md:left-[35%] bottom-2 border-1 rounded-[60px] bg-[#ffffff33] backdrop-blur-[5px] border-[#ffffff] cta'>
                 <div className='flex gap-2 actionBtn'>
                   <button
                     onMouseEnter={() => setHoveredBtn('portfolio')}

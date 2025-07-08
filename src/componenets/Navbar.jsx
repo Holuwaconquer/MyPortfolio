@@ -31,7 +31,7 @@ const Navbar = () => {
       variants={fadeDownVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
     <div className='navBar flex flex-col justify-center items-center box-border w-[90%] bg-[#171717] relative text-white rounded-[50px]'>
       <div id='navBar-container' className='flex justify-between relative items-center w-full'>

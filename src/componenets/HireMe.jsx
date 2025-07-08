@@ -17,7 +17,7 @@ const HireMe = () => {
       variants={fadeUpVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
     <div className='hireMe bg-[#F2F4F7] rounded-[50px]'>
       <div className='grid gap-4 text-center md:text-left justify-center md:grid-cols-[1fr_1fr] items-center'>

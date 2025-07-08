@@ -27,7 +27,7 @@ const Footer = () => {
       variants={fadeUpVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       style={{ padding: '4% 7% 1%' }}
       className='bg-[#272727] rounded-t-3xl'
     >
@@ -105,7 +105,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div style={{ padding: '30px 0 10px 0' }} className='flex flex-col md:flex-row md:items-center border-[#475467] border-t text-white w-full justify-between'>
-          <p>Copyright© {new Date().getFullYear()} Okiki Tech. All Rights Reserved.</p>
+          <p>Copyright ©{new Date().getFullYear()} Okiki Tech. All Rights Reserved.</p>
           <p>User Terms & Conditions | Privacy Policy</p>
         </div>
       </div>

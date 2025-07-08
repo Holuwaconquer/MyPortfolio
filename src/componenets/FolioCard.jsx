@@ -3,10 +3,10 @@ import React from 'react'
 import Arrow from '../assets/upright.png'
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
 
-const FolioCard = ({ category, title, details, anchor, techStack, image }) => {
+const FolioCard = ({ category, title, details, anchor, techStack, image, className }) => {
   return (
     <div style={{padding: '20px'}} className='border-b-1 border-[black]'>
-      <div className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'>
+      <div className={className}>
         <div className='w-[90%] md:h-[280px] shadow-md rounded-[20px] object-fit-cover'>
           <img src={image} className='w-full h-full rounded-[20px] object-fit-cover' alt="project-image" />
         </div>

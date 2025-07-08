@@ -37,7 +37,7 @@ const Awesome = () => {
       variants={fadeUpVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }} // 👈 Animate every time in view
+      viewport={{ once: true, amount: 0.3 }} // 👈 Animate every time in view
       style={{ padding: '5% 7%' }}
       className='awesome flex flex-col items-center justify-center'
     >

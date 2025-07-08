@@ -18,7 +18,7 @@ const ServicesCard = ({ serviceTitle, servicesImg }) => {
       variants={fadeUpVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
     <div className='bg-[#ffffff2a] border-1 hover:translate-y-2 overflow-hidden rounded-[35px] flex flex-col justify-between h-100 gap-[2em]' style={{backdropFilter: 'blur(5px)', transition: '0.3s ease-in-out', padding: '20px 0 0'}}>
       <div className='flex items-center border-b justify-between' style={{padding: '15px 20px'}}>

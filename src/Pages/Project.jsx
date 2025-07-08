@@ -5,6 +5,7 @@ import Ally from '../assets/AiAlly.png'
 import Todo from '../assets/todo.png'
 import Stopgap from '../assets/stopgap.png'
 
+
 const Project = () => {
   return (
     <div style={{padding: '5% 7%'}} className='About flex flex-col gap-4 items-center'>
@@ -18,7 +19,8 @@ const Project = () => {
           anchor='https://livest-real-estate.web.app'
           techStack= 'Javascript, Bootstrap, Firebase, Introjs, Emailjs' 
           image={Webapp}
-        />
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+          />
         <FolioCard 
           category='Web App' 
           title='Stopgap Mail' 
@@ -26,7 +28,8 @@ const Project = () => {
           techStack= 'Javascript, Guerrilla  API, Bootstrap'
           anchor='https://stopgap-f65dc.web.app/' 
           image={Stopgap}
-        />
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+          />
         <FolioCard 
           category='Web App' 
           title='Todo List' 
@@ -34,13 +37,15 @@ const Project = () => {
           anchor='https://conquertab.vercel.app/' 
           techStack= 'Reactjs, Localstorage'
           image={Todo}
-        />
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+          />
         <FolioCard 
           category='Landing Page (Static)' 
           title='Ai Ally' 
           details='This is a landing page for an AI Web platform, the website is built HTML, CSS (BOOTSTRAP)' 
           techStack= 'HTML, CSS, BootStrap'
           anchor='https://all-ally-website.vercel.app/' 
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
           image={Ally}
         />
       </div>
