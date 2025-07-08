@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Button from './Button'
 import Sms from '../assets/sms.png'
@@ -16,7 +16,22 @@ const fadeUpVariant = {
   }
 }
 
+
 const Awesome = () => {
+  const [userMessage, setUserMessage] = useState('')
+
+  const sendMail = () =>{
+    if(userMessage){
+      const phoneNumber = '2349025140981';
+      const encodedMessage = encodeURIComponent(userMessage);
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+
+      window.open(whatsappUrl, '_blank');
+    }else{
+      alert('no message to send')
+    }
+  }
+
   return (
     <motion.div
       variants={fadeUpVariant}
@@ -40,8 +55,10 @@ const Awesome = () => {
             className='border-0 w-[80%] focus:outline-0'
             type="text"
             placeholder='Enter Email Address'
+            value={userMessage}
+            onChange={(e) => setUserMessage(e.target.value)}
           />
-          <Button style={{ padding: '10px 35px', transition: '0.2s ease-in-out' }} BtnText='Send' />
+          <Button onClick={sendMail} style={{ padding: '10px 35px', transition: '0.2s ease-in-out' }} BtnText='Send' />
         </div>
       </div>
 

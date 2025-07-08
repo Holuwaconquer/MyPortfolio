@@ -50,14 +50,16 @@ const Hero = () => {
                     <img width={'17px'} src={Arrow} alt="" />
                   </button>
 
-                  <button
-                    onMouseEnter={() => setHoveredBtn('hire')}
-                    onMouseLeave={() => setHoveredBtn(null)}
-                  style={{transition: '0.2s ease-in-out'}}
-                    className={`flex items-center gap-2 rounded-[60px] text-white cursor-pointer ${hoveredBtn === 'hire' ? 'bg-[#FD853A]' : ''}`}>
-                    <span>Hire</span>
-                    <img width={'17px'} src={`${hoveredBtn === 'hire' ? Arrow : ''}`} alt={`${hoveredBtn === 'hire' ? Arrow : ''}`} />
-                  </button>
+                  <a target='_blank' href="https://wa.link/tjunve">
+                    <button
+                      onMouseEnter={() => setHoveredBtn('hire')}
+                      onMouseLeave={() => setHoveredBtn(null)}
+                      style={{transition: '0.2s ease-in-out'}}
+                      className={`flex items-center gap-2 rounded-[60px] text-white cursor-pointer ${hoveredBtn === 'hire' ? 'bg-[#FD853A]' : ''}`}>
+                      <span>Hire</span>
+                      <img width={'17px'} src={`${hoveredBtn === 'hire' ? Arrow : ''}`} alt={`${hoveredBtn === 'hire' ? Arrow : ''}`} />
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

@@ -38,7 +38,9 @@ const HireMe = () => {
             </span>
           </div>
           <span>
-            <button style={{padding: '15px 30px'}} className='border-1 cursor-pointer hover:bg-[#151515] transition-all hover:text-white border-[#151515] rounded-[20px]'>Hire me</button>
+            <a target='_blank' href="https://wa.link/tjunve">
+              <button style={{padding: '15px 30px'}} className='border-1 cursor-pointer hover:bg-[#151515] transition-all hover:text-white border-[#151515] rounded-[20px]'>Hire me</button>
+            </a>
           </span>
         </div>
       </div>

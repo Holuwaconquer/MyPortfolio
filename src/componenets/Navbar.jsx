@@ -1,7 +1,7 @@
 import React, {useRef, useEffect, useState} from 'react'
-import Logo from '../assets/newLogo.png'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import MyLogo from '../assets/favicon-32x32.png'
 
 
 const fadeDownVariant = {
@@ -41,8 +41,8 @@ const Navbar = () => {
           <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/services'>Service</NavLink>
         </div>
         <div onClick={goHome} className='logo cursor-pointer flex items-center gap-2'>
-          <img src={Logo} alt={Logo} />
-          <h1 className='text-3xl'>{'{'}Okiki {'}'}</h1>
+          <img src={MyLogo} alt='logo' />
+          <h1 className='text-3xl'>Okiki.Tech</h1>
         </div>
         <div className='rightLink flex gap-[2em] items-center text-[20px]'>
           <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/resume'>Resume</NavLink>

@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import MyLogo from '../assets/favicon-32x32.png'
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 60 },
@@ -36,12 +37,14 @@ const Footer = () => {
         <div style={{ padding: '0 0 40px 0' }} className='w-full flex gap-4 md:gap-0 flex-col md:flex-row md:items-center justify-between border-[#475467] border-b'>
           <h1 className='text-4xl font-bold text-white'>Let's Connect there</h1>
           <span>
-            <button
-              style={{ padding: '10px 25px', transition: '0.2s ease-in-out' }}
-              className='flex items-center gap-2 bg-[#FD853A] hover:bg-[transparent] border-1 border-[#FD853A] rounded-[60px] cursor-pointer text-white'>
-              <span>Hire Me</span>
-              <img width={'17px'} src={Arrow} alt="" />
-            </button>
+            <a target='_blank' href="https://wa.link/tjunve">
+              <button
+                style={{ padding: '10px 25px', transition: '0.2s ease-in-out' }}
+                className='flex items-center gap-2 bg-[#FD853A] hover:bg-[transparent] border-1 border-[#FD853A] rounded-[60px] cursor-pointer text-white'>
+                <span>Hire Me</span>
+                <img width={'17px'} src={Arrow} alt="" />
+              </button>
+            </a>
           </span>
         </div>
 
@@ -49,12 +52,12 @@ const Footer = () => {
         <div style={{ marginTop: '40px' }} className='grid text-white gap-4 md:grid-cols-[3fr_1fr_1fr_2fr] w-full'>
           <div className='flex flex-col gap-5'>
             <div className='logo flex items-center gap-2'>
-              <img src={Logo} alt="logo" />
-              <h1 className='text-3xl'>{'{'}Okiki {'}'}</h1>
+              <img src={MyLogo} alt='logo' />
+              <h1 className='text-3xl'>Okiki.Tech</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias! Asperiores hic
-              perspiciatis ullam rem qui amet optio, ea id, distinctio omnis voluptate atque ipsam?
+              Feel free to reach out via email or connect with me on social platforms. I’m always open to 
+              exciting opportunities, freelance work, or even just sharing ideas over coffee (virtual or real ☕).
             </p>
             <div className='socialLink flex gap-3'>
               <a href="https://www.facebook.com/OkikiolaFakorede01" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
