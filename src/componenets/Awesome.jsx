@@ -65,7 +65,7 @@ const Awesome = () => {
       <div style={{ marginTop: '10px' }} className='flex flex-col md:flex-row md:w-2/4 text-[14px] justify-between items-center'>
         <span className='flex items-center gap-1'><img src={oneStar} alt="" /> <span>4.9/5 Average Ratings</span></span>
         <span className='flex items-center gap-1'><img src={Award} alt="" /> <span>25+ Winning Awards</span></span>
-        <span className='flex items-center gap-1'><img src={Shield} alt="" /> <span>Certified Product Designer</span></span>
+        <span className='flex items-center gap-1'><img src={Shield} alt="" /> <span>Certified Software Developer</span></span>
       </div>
     </motion.div>
   )

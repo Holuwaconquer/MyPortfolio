@@ -26,45 +26,35 @@ const Testimonials = () => {
             <div className='flex flex-col gap-[4em] justify-center items-center text-white'>
               <div className='text-center flex flex-col gap-4 justify-center items-center'>
                 <h1 className='text-4xl md:w-2/4'>Testimonials That Speak to <span className='text-[#FD853A]'>My Results</span></h1>
-                <p className='text-[#F9FAFB] md:w-2/4 text-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aperiam 
-                  inventore quis aliquam magni quisquam, reprehenderit ipsa iusto quod, qui rem 
-                  officiis libero quas perferendis totam voluptatum magnam nostrum odio?
+                <p className='text-[#F9FAFB] md:w-2/4 text-[15px]'>Every project is a partnership, and these testimonials reflect the passion, trust, and dedication that go into everything I create.
                 </p>
               </div>
               <div className='testimonyCard grid w-full gap-[1em] flex-nowrap md:grid-cols-[40vw_40vw_40vw_40vw]'>
                 <TestiCard 
-                  testiAuthor='Jayesh Patil' 
-                  testiCompany='CEO, Llrante' 
-                  testiWord='consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum 
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.'
+                  testiAuthor='Emmanuel Ayobami' 
+                  testiCompany='Funaabites' 
+                  testiWord='Working with Okikiola was an absolute pleasure. He understood our needs perfectly and delivered a product that exceeded expectations. Highly recommended!'
                   testtiImg={ProfileImage}
                   testiStar={Star}
                 />
                 <TestiCard 
-                  testiAuthor='Odekomoya Oluwaseyi' 
-                  testiCompany='Partner, SCICT' 
-                  testiWord='consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum 
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.'
+                  testiAuthor='Mr Akeem' 
+                  testiCompany='Partner' 
+                  testiWord='His creative vision is unmatched. Okikiola brought a fresh perspective to our brand and executed everything with precision and style.'
                   testtiImg={ProfileImage}
                   testiStar={Star}
                 />
                 <TestiCard 
-                  testiAuthor='Jayesh Patil' 
-                  testiCompany='CEO, Llrante' 
-                  testiWord='consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum 
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.'
+                  testiAuthor='Mr. Abiola' 
+                  testiCompany='SCICIT' 
+                  testiWord='From the initial consultation to the final launch, Okikiola was professional, responsive, and technically brilliant. He built a web application that’s both functional and beautiful.”'
                   testtiImg={ProfileImage}
                   testiStar={Star}
                 />
                 <TestiCard 
-                  testiAuthor='Jayesh Patil' 
-                  testiCompany='CEO, Llrante' 
-                  testiWord='consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum 
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.'
+                  testiAuthor='John Doe' 
+                  testiCompany='Partner' 
+                  testiWord='Clear communication, fast turnaround, and high-quality results. We always knew where we stood and felt supported every step of the way.'
                   testtiImg={ProfileImage}
                   testiStar={Star}
                 />

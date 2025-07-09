@@ -31,9 +31,7 @@ const Work = () => {
                   </div>
                   <div style={{justifySelf: 'flex-end'}} className='md:w-3/4'>
                     <h1 className='text-[1.2rem] md:text-2xl font-bold text-[#344054]'>Software Developement Internship</h1>
-                    <p className='text-[#98A2B3] text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, 
-                      deleniti illum? Nulla itaque facere amet. Enim similique culpa nihil
-                      distinctio eos voluptatem omnis consequuntur modi?
+                    <p className='text-[#98A2B3] text-sm'>I contributed to multiple projects including Estatery ( real estate web application) Stopgap mail (a temporary email generator with message features). I focused on front-end development using React, building RESTful APIs with Node.js using Expressjs, or debugging and testing.
                     </p>
                   </div>
                 </div>
@@ -46,9 +44,7 @@ const Work = () => {
                   </div>
                   <div style={{justifySelf: 'flex-end'}} className='md:w-3/4'>
                     <h1 className='text-[1.2rem] md:text-2xl font-bold text-[#344054]'>Web Designer</h1>
-                    <p className='text-[#98A2B3] text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto 
-                      culpa ad quibusdam labore exercitationem minima dignissimos cumque 
-                      repudiandae? Corrupti officiis possimus culpa rem nobis?
+                    <p className='text-[#98A2B3] text-sm'>As a Web Designer at S4E Agency, I design and develop responsive, user-friendly websites for clients across various industries. My responsibilities include translating client requirements into visually compelling layouts, creating wireframes and prototypes, and implementing designs using HTML, CSS, JavaScript, and modern front-end frameworks. I collaborate closely with developers and content teams to ensure seamless functionality and consistent branding across all platforms.
                     </p>
                   </div>
                 </div>
@@ -62,9 +58,7 @@ const Work = () => {
                   </div>
                   <div style={{justifySelf: 'flex-end'}} className='md:w-3/4'>
                     <h1 className='text-[1.2rem] md:text-2xl font-bold text-[#344054]'>Data Analysis with Excel</h1>
-                    <p className='text-[#98A2B3] text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id 
-                      natus distinctio corrupti quam dolorem dolorum pariatur quasi, 
-                      blanditiis enim officia aliquid, similique neque ipsa?
+                    <p className='text-[#98A2B3] text-sm'>At Emmanuel TechHub, I completed an intensive training and hands-on program focused on data analysis using Microsoft Excel. The experience equipped me with the ability to collect, clean, organize, and interpret datasets to support data-driven decision-making.
                     </p>
                   </div>
                 </div>

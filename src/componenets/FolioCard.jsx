@@ -20,7 +20,7 @@ const FolioCard = ({ category, title, details, anchor, techStack, image, classNa
             <h1 className='' style={{marginTop: '20px'}}>Tech Stack: <br /> <span className='text-[#FD853A]'>{techStack}</span></h1>
           </div>
           <div>
-            <a target='_blank' href={anchor}><BsArrowUpRightSquareFill className='text-4xl text-[#FD853A]' /></a>
+            <a target='_blank' href={anchor}><BsArrowUpRightSquareFill className='text-4xl hover:text-[#3b281d] text-[#FD853A]' /></a>
           </div>
         </div>
       </div>
