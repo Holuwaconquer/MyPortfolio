@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
         <div className='w-full'>
           <form className='w-full flex flex-col gap-4' action="">
-            <input type="text" placeholder='Name' style={{padding: '20px'}} className='bg-[#e6e6e6] w-full border-0 text-black'/>
+            <input type="text" placeholder='Name' style={{padding: '20px'}} className='bg-[#e6e6e6] focus:outline-1 focus:border-[#FD853A] w-full border-0 text-black'/>
             <input type="text" placeholder='Email' style={{padding: '20px'}} className='bg-[#e6e6e6] w-full border-0 text-black'/>
             <textarea name="" rows='7' style={{padding: '20px', resize: 'none'}} placeholder='Type your message here' className='bg-[#e6e6e6] w-full border-0 text-black' id=""></textarea>
             <button style={{padding: '20px'}} className='bg-[#FD853A] block cursor-pointer' type='button'>Submit</button>

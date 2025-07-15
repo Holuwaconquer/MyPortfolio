@@ -166,6 +166,9 @@ body{
   .heroSection{
     padding: 4% 5% 0;
   }
+  .homePortfolio{
+    padding: 3% 4%;
+  }
   .profilePic{
     margin-top: 40px;
   }

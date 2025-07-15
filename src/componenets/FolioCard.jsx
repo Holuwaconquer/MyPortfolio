@@ -5,7 +5,7 @@ import { BsArrowUpRightSquareFill } from "react-icons/bs";
 
 const FolioCard = ({ category, title, details, anchor, techStack, image, className }) => {
   return (
-    <div style={{padding: '20px'}} className='border-b-1 border-[black]'>
+    <div style={{padding: '10px'}} className='border-b-1 border-[black]'>
       <div className={className}>
         <div className='w-[90%] md:h-[280px] shadow-md rounded-[20px] object-fit-cover'>
           <img src={image} className='w-full h-full rounded-[20px] object-fit-cover' alt="project-image" />
@@ -14,7 +14,7 @@ const FolioCard = ({ category, title, details, anchor, techStack, image, classNa
           <div>
             <small>{category}</small>
             <h1 style={{marginBottom: '10px'}} className='font-bold text-3xl text-[#FD853A]'>{title}</h1>
-            <p>
+            <p className='text-justify'>
               {details}
             </p>
             <h1 className='' style={{marginTop: '20px'}}>Tech Stack: <br /> <span className='text-[#FD853A]'>{techStack}</span></h1>

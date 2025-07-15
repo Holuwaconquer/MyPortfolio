@@ -64,8 +64,8 @@ const Work = () => {
                 </div>
                 {/* third */}
 
-                <div className='absolute left-[-20%] md:left-[45%] centerImg'>
-                  <img src={Center} className='relative h-[500px] md:h-[auto] md:w-[35px]' alt="" />
+                <div className='absolute top-[10%] md:top-[10%] left-[-19%] md:left-[45%] centerImg'>
+                  <img src={Center} className='relative h-[700px] w-[55px] md:h-[400px] md:w-[50px]' alt="" />
                 </div>
               </div>
             </div>
