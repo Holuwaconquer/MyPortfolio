@@ -15,7 +15,7 @@ const Project = () => {
         <FolioCard 
           category='Real Estate Marketplace' 
           title='Estatery' 
-          details='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae in quasi tempora obcaecati quos dolore eveniet magni omnis sequi debitis id voluptatum, dolorem doloremque optio minima laudantium ea esse incidunt?' 
+          details='This is a real estate community web app that focuses on connecting house owner or agent to buyers and vise versa, this web app is designed with vanila JavaScript and firebase.' 
           anchor='https://livest-real-estate.web.app'
           techStack= 'Javascript, Bootstrap, Firebase, Introjs, Emailjs' 
           image={Webapp}

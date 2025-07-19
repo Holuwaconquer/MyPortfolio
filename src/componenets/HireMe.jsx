@@ -26,7 +26,7 @@ const HireMe = () => {
         </div>
         <div className='flex flex-col gap-6 md:w-3/4'>
           <h1 className='text-4xl font-bold text-[#1D2939]'>Why<span className='text-[#FD853A]'> Hire me</span>?</h1>
-          <p className='text-[#98A2B3]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ea, culpa fugit error totam nobis perferendis nulla. Ut, maiores blanditiis.</p>
+          <p className='text-[#98A2B3]'>I don’t just complete projects—I craft experiences. Let’s turn your vision into something impactful and unforgettable.</p>
           <div className='flex w-full justify-center gap-5 md:justify-between items-center'>
             <span>
               <h1 className='font-bold text-3xl text-[#1D2939]'>5+</h1>
