@@ -5,6 +5,7 @@ import Webapp from '../assets/web-app.png'
 import Stopgap from '../assets/stopgap.png'
 import { motion } from 'framer-motion'
 import { redirect, useNavigate } from 'react-router-dom'
+import Melody from '../assets/Melodies.png'
 
 
 const fadeUpVariant = {
@@ -43,7 +44,6 @@ const Portfolio = () => {
             anchor='https://mymelodies.vercel.app'
             techStack= 'Reactjs, Redux, React-Toastify, Audius API' 
             image={Melody}
-            className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
           />
           <FolioCard 
             category='Real Estate Marketplace' 
