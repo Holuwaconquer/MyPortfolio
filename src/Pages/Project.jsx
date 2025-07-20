@@ -4,6 +4,7 @@ import Webapp from '../assets/web-app.png'
 import Ally from '../assets/AiAlly.png'
 import Todo from '../assets/todo.png'
 import Stopgap from '../assets/stopgap.png'
+import Melody from '../assets/Melodies.png'
 
 
 const Project = () => {
@@ -13,6 +14,15 @@ const Project = () => {
 
       <div className='w-full grid gap-2 md:gap-5'>
         <FolioCard 
+          category='Music Web App' 
+          title='Melodies' 
+          details='Melodies is Music Application, that uses the Audis API to fetch it music, the features of the application includes fetching music data from the API and giving the user to listen to the music in our application and also get information about the music, artist and the artist information, you can play music, view trending music, trending artist, etc.' 
+          anchor='https://mymelodies.vercel.app'
+          techStack= 'Reactjs, Redux, React-Toastify, Audius API' 
+          image={Melody}
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+        />
+        <FolioCard 
           category='Real Estate Marketplace' 
           title='Estatery' 
           details='This is a real estate community web app that focuses on connecting house owner or agent to buyers and vise versa, this web app is designed with vanila JavaScript and firebase.' 
@@ -20,7 +30,7 @@ const Project = () => {
           techStack= 'Javascript, Bootstrap, Firebase, Introjs, Emailjs' 
           image={Webapp}
           className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
-          />
+        />
         <FolioCard 
           category='Web App' 
           title='Stopgap Mail' 
