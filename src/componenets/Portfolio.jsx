@@ -5,7 +5,7 @@ import Webapp from '../assets/web-app.png'
 import Stopgap from '../assets/stopgap.png'
 import { motion } from 'framer-motion'
 import { redirect, useNavigate } from 'react-router-dom'
-import Melody from '../assets/Melodies.png'
+import Fastcart from '../assets/fastcart.png'
 
 
 const fadeUpVariant = {
