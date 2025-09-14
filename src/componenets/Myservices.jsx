@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Services from '../assets/services.png'
 import ServicesCard from './ServicesCard'
 import Dashboard from '../assets/dashboard.png'
+import Fastcart from '../assets/fastcart.png'
 
 const Myservices = () => {
 
@@ -17,7 +18,7 @@ const Myservices = () => {
         <div className='w-full grid gap-[3em] lg:grid-rows-1 lg:grid-cols-[1fr_1fr_1fr]' style={{marginTop: '3em'}}>
           <ServicesCard servicesImg={Dashboard} serviceTitle='Web Appliication' />
           <ServicesCard servicesImg={Services} serviceTitle='Business Website' />
-          <ServicesCard servicesImg={Services} serviceTitle='Ecommerce' />
+          <ServicesCard servicesImg={Fastcart} serviceTitle='Ecommerce' />
         </div>
       </div>
     </div>
