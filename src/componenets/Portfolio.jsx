@@ -44,7 +44,7 @@ const Portfolio = () => {
             anchor='https://fastcart-ecommerce-web-app.vercel.app'
             techStack= 'Tailwind, Reactjs, Redux, React-Toastify, Recharts, Express.js, MongoDB, Node.js, ' 
             image={Fastcart}
-            className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+            className='grid gap-[1em]'
           />
           <FolioCard 
             category='Real Estate Marketplace' 
