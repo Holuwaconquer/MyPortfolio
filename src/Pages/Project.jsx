@@ -5,6 +5,7 @@ import Ally from '../assets/AiAlly.png'
 import Todo from '../assets/todo.png'
 import Stopgap from '../assets/stopgap.png'
 import Melody from '../assets/Melodies.png'
+import Fastcart from '../assets/fastcart.png'
 
 
 const Project = () => {
@@ -14,11 +15,20 @@ const Project = () => {
 
       <div className='w-full grid gap-2 md:gap-5'>
         <FolioCard 
+          category='E-Commerce' 
+          title='Fastcart' 
+          details='This is a Ecommerce Web Application with PWA Support, that i built as my final project at SQI College of ICT, i stumbled upon the designed on Figma and replicated the desiged with the MERN stack framework, with other frontend library.' 
+          anchor='https://fastcart-ecommerce-web-app.vercel.app'
+          techStack= 'Tailwind, Reactjs, Redux, React-Toastify, Recharts, Express.js, MongoDB, Node.js, ' 
+          image={Fastcart}
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+        />
+        <FolioCard 
           category='Music Web App' 
           title='Melodies' 
           details='Melodies is Music Application, that uses the Audis API to fetch it music, the features of the application includes fetching music data from the API and giving the user to listen to the music in our application and also get information about the music, artist and the artist information, you can play music, view trending music, trending artist, etc.' 
           anchor='https://mymelodies.vercel.app'
-          techStack= 'Reactjs, Redux, React-Toastify, Audius API' 
+          techStack= 'Tailwind, Reactjs, Redux, React-Toastify, Audius API' 
           image={Melody}
           className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
         />
