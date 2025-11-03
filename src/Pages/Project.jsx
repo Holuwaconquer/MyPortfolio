@@ -6,6 +6,7 @@ import Todo from '../assets/todo.png'
 import Stopgap from '../assets/stopgap.png'
 import Melody from '../assets/Melodies.png'
 import Fastcart from '../assets/fastcart.png'
+import Zeezat from '../assets/zeezat.png'
 
 
 const Project = () => {
@@ -14,6 +15,15 @@ const Project = () => {
       <h1 className='text-4xl font-bold text-center'>My <span className='text-[#FD853A]'>Project</span></h1>
 
       <div className='w-full grid gap-2 md:gap-5'>
+        <FolioCard 
+          category='Desktop Application' 
+          title='Zeezat Inventory & POS' 
+          details='This is an inventory & pos system for Zeezat Foods to track and manage their product and sales, also for automated calculations of their sales and product count.' 
+          anchor='https://github.com/Holuwaconquer/Zeezat-Foods'
+          techStack= 'Tailwind, Reactjs, Redux, React-Toastify, Recharts, Express.js, MongoDB, Node.js, Tauri' 
+          image={Zeezat}
+          className='grid md:grid-cols-[1fr_1fr] items-center justify-center gap-[1em] md:gap-[3em]'
+        />
         <FolioCard 
           category='E-Commerce' 
           title='Fastcart' 

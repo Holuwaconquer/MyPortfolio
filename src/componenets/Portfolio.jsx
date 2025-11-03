@@ -1,11 +1,10 @@
 import React from 'react'
 import Button from './Button'
 import FolioCard from '../componenets/FolioCard'
-import Webapp from '../assets/web-app.png'
-import Stopgap from '../assets/stopgap.png'
 import { motion } from 'framer-motion'
-import { redirect, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Fastcart from '../assets/fastcart.png'
+import Zeezat from '../assets/zeezat.png'
 
 
 const fadeUpVariant = {
@@ -38,21 +37,21 @@ const Portfolio = () => {
         </div>
         <div style={{margin: '20px 0'}} className='w-full grid md:gap-[1em] md:grid-cols-[1fr_1fr]'>
           <FolioCard 
+            category='Desktop Application' 
+            title='Zeezat Inventory & POS' 
+            details='This is an inventory & pos system for Zeezat Foods to track and manage their product and sales, also for automated calculations of their sales and product count.' 
+            anchor='https://github.com/Holuwaconquer/Zeezat-Foods'
+            techStack= 'Tailwind, Reactjs, Redux, React-Toastify, Recharts, Express.js, MongoDB, Node.js, Tauri' 
+            image={Zeezat}
+            className='grid gap-[1em]'
+          />
+          <FolioCard 
             category='E-Commerce' 
             title='Fastcart' 
             details='This is a Ecommerce Web Application with PWA Support, that i built as my final project at SQI College of ICT, i stumbled upon the designed on Figma and replicated the desiged with the MERN stack framework, with other frontend library.' 
             anchor='https://fastcart-ecommerce-web-app.vercel.app'
             techStack= 'Tailwind, Reactjs, Redux, React-Toastify, Recharts, Express.js, MongoDB, Node.js, ' 
             image={Fastcart}
-            className='grid gap-[1em]'
-          />
-          <FolioCard 
-            category='Real Estate Marketplace' 
-            title='Estatery' 
-            details='This is a real estate community web app that focuses on connecting house owner or agent to buyers and vise versa, this web app is designed with vanila JavaScript and firebase.' 
-            anchor='https://livest-real-estate.web.app'
-            techStack= 'Javascript, Bootstrap, Firebase, Introjs, Emailjs' 
-            image={Webapp}
             className='grid gap-[1em]'
           />
         </div>
